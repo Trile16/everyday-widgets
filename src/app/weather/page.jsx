@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-require("dotenv").config();
 
 export default function Weather() {
   const [city, setCity] = useState("Metairie");
