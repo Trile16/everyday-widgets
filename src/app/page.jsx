@@ -11,7 +11,7 @@ export default function Home() {
           href="/weather"
           className="flex flex-col items-center bg-blue w-fit rounded-xl m-4 w-1/3 border-2 transition hover:border-green"
         >
-          <Image src="/clouds.png" width={125} height={125} alt="weather" />
+          <Image src="/Clouds.png" width={125} height={125} alt="weather" />
           <h2 className="text-xl/8">Weather</h2>
         </Link>
         <Link

@@ -16,7 +16,6 @@ export default function Weather() {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${process.env.NEXT_PUBLIC_WEATHERAPIKEY}&units=${tempUnit}`
       );
       const result = await response.json();
-      console.log(result);
       setCityWeather(result);
     }
     getWeather();
@@ -34,7 +33,6 @@ export default function Weather() {
               `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${process.env.NEXT_PUBLIC_WEATHERAPIKEY}&units=${tempUnit}`
             );
             const result = await response.json();
-            console.log(result);
             setCityWeather(result);
           }
           getWeather();
@@ -92,7 +90,7 @@ export default function Weather() {
       )}
       <Link
         href="/"
-        className="bg-blue w-fit rounded-xl m-4 w-1/4 text-center border-2 transition hover:border-green"
+        className="bg-blue rounded-xl w-20 text-center border-2 transition hover:border-green"
       >
         Home
       </Link>
