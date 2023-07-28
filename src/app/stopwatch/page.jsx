@@ -22,7 +22,7 @@ export default function Stopwatch() {
 
   return (
     <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-5/6 flex flex-col justify-between items-center">
-      <h1 className="text-3xl/8 p-8 text-center">Stopwatch</h1>
+      <h1 className="text-4xl/8 p-8 text-center">Stopwatch</h1>
       <div className="bg-gray w-5/6 h-1/2 rounded-xl flex flex-col justify-center items-center">
         <div className="text-5xl">
           <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
@@ -41,7 +41,12 @@ export default function Stopwatch() {
           </button>
         </div>
       </div>
-      <Link href="/">Home</Link>
+      <Link
+        href="/"
+        className="bg-blue w-fit rounded-xl m-4 w-1/6 text-center border-2 transition hover:border-green"
+      >
+        Home
+      </Link>
     </div>
   );
 }
