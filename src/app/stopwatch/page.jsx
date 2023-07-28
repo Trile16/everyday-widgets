@@ -43,7 +43,7 @@ export default function Stopwatch() {
       </div>
       <Link
         href="/"
-        className="bg-blue w-fit rounded-xl m-4 w-1/6 text-center border-2 transition hover:border-green"
+        className="bg-blue w-fit rounded-xl m-4 w-1/4 text-center border-2 transition hover:border-green"
       >
         Home
       </Link>
