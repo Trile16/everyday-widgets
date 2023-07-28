@@ -15,7 +15,7 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-5/6 flex flex-col justify-between items-center">
+    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-[40rem] flex flex-col justify-between items-center">
       <h1 className="text-4xl/8 p-8 text-center">Clock</h1>
       <div className="w-1/2 bg-gray rounded-md h-1/6 flex justify-center items-center text-3xl">
         {currentTime}

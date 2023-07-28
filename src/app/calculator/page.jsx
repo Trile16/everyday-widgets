@@ -8,7 +8,7 @@ export default function Calculator() {
   const [accCalc, setAccCalc] = useState("");
 
   return (
-    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-5/6 flex flex-col justify-between items-center">
+    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-[40rem] flex flex-col justify-between items-center">
       <h1 className="text-4xl/8 p-8 text-center">Calculator</h1>
       <div className="h-5/6 w-8/12 bg-gray-light rounded-xl flex flex-col justify-center items-center">
         <h2 className="h-12 w-5/6 bg-gray flex justify-end items-center text-5xl">

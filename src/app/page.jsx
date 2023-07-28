@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-5/6 flex flex-col justify-between items-center">
+    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-[40rem] flex flex-col justify-between items-center">
       <h1 className="text-4xl/8 p-8 text-center">Everyday Widgets!</h1>
       <div className="flex flex-wrap justify-center items-center w-3/4">
         <Link

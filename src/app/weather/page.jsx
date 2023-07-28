@@ -21,7 +21,7 @@ export default function Weather() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-5/6 flex flex-col justify-between items-center">
+    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-[40rem] flex flex-col justify-between items-center">
       <h1 className="text-4xl/8 p-8 text-center">Weather</h1>
       <form
         className="w-full flex items-center justify-center"
@@ -32,6 +32,7 @@ export default function Weather() {
               `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${process.env.NEXT_PUBLIC_WEATHERAPIKEY}&units=${tempUnit}`
             );
             const result = await response.json();
+            console.log(result);
             setCityWeather(result);
           }
           getWeather();
@@ -66,8 +67,8 @@ export default function Weather() {
             <h1 className="text-xl">{cityWeather?.main?.temp}°F</h1>
             <h2 className="text-2xl">{cityWeather?.name}</h2>
           </div>
-          <div className="w-full flex justify-around">
-            <div className="col">
+          <div className="w-full flex justify-around items-center">
+            <div className="h-[150px] flex flex-col justify-around items-center">
               <Image
                 src="/humidity.png"
                 width={100}
@@ -77,8 +78,14 @@ export default function Weather() {
               <p className="humidity">{cityWeather?.main?.humidity}%</p>
               <p>Humidity</p>
             </div>
-            <div className="col">
-              <Image src="/wind.png" width={100} height={100} alt="wind" />
+            <div className="h-[150px] flex flex-col justify-around items-center">
+              <Image
+                src="/wind.png"
+                width={100}
+                height={100}
+                alt="wind"
+                style={{ objectFit: "contain" }}
+              />
               <p className="wind">{cityWeather?.wind?.speed} mph</p>
               <p>Wind Speed</p>
             </div>

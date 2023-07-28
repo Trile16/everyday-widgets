@@ -21,7 +21,7 @@ export default function Stopwatch() {
   }, [start]);
 
   return (
-    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-5/6 flex flex-col justify-between items-center">
+    <div className="bg-gradient-to-r from-blue to-purple rounded-xl p-8 w-5/6 max-w-xl h-[40rem] flex flex-col justify-between items-center">
       <h1 className="text-4xl/8 p-8 text-center">Stopwatch</h1>
       <div className="bg-gray w-5/6 h-1/2 rounded-xl flex flex-col justify-center items-center">
         <div className="text-5xl">
